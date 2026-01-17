@@ -1,8 +1,10 @@
 package model;
 
 public enum JenisProduk {
-    MAKANAN,
+    ROTI_MANIS,
+    ROTI_TAWAR,
+    KUE_KERING,
+    KUE_BASAH,
     MINUMAN,
-    MERCHANDISE,
     LAINNYA
 }

@@ -1,9 +1,10 @@
 package model;
 
 public enum LevelKaryawan {
-    JUNIOR(0.02),
-    SENIOR(0.05),
-    LEAD(0.10);
+    STAF_TOKO(0.02),
+    KASIR(0.03),
+    BAKER(0.05),
+    MANAGER(0.08);
 
     private final double bonusRate;
 

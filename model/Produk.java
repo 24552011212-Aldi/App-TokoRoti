@@ -32,6 +32,6 @@ public class Produk extends Entitas {
 
 	@Override
 	public String deskripsi() {
-		return "Produk " + getNama() + " - " + jenis + " (kode: " + getKode() + ")";
+		return "Produk Toko Roti: " + getNama() + " - " + jenis + " (kode: " + getKode() + ")";
 	}
 }

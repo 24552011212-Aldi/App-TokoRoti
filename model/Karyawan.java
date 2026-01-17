@@ -33,6 +33,6 @@ public class Karyawan extends Entitas {
 
 	@Override
 	public String deskripsi() {
-		return "Karyawan " + getNama() + " - " + level + " (kode: " + getKode() + ")";
+		return "Karyawan Toko Roti: " + getNama() + " - " + level + " (kode: " + getKode() + ")";
 	}
 }

@@ -64,7 +64,7 @@ public class Transaksi extends Entitas {
 
 	@Override
 	public String deskripsi() {
-		return "Transaksi " + getKode() + " oleh " + kasir.getNama() + " untuk " + produk.getNama()
-				+ " x" + jumlah + " - status: " + status;
+		return "Transaksi Toko Roti " + getKode() + " oleh " + kasir.getNama() + " untuk " + produk.getNama()
+			+ " x" + jumlah + " - status: " + status;
 	}
 }
