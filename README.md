@@ -11,22 +11,26 @@
 ## Struktur Folder
 ```
 TokoRotiApp/
+├── database/
+│   └── data_transaksi.txt             (File Handling: Penyimpanan data)
 ├── src/
-   └── com/tokoroti/
-       ├── Main.java                 (Titik masuk & inisialisasi data)
-       ├── data/                     
-       │   └── DataStorage.java      (ArrayList, Pusat List produk, karyawan, & uang) 
-       ├── model/                    (Objek/class)
-       │   ├── Produk.java
-       │   ├── Karyawan.java
-       │   └── Transaksi.java
-       ├── view/                     (Tampilan GUISwing)
-       │   ├── MainFrame.java        (Window Utama)
-       │   ├── GudangPanel.java      (Tab/Halaman Gudang)
-       │   ├── KaryawanPanel.java    (Tab/Halaman Karyawan)
-       │   └── KeuanganPanel.java    (Tab/Halaman Keuangan)
-       └── service/                  (Logika Pengolahan Data)
-            ├── GudangService.java    (Logika tambah/kurang stok)
-            ├── KaryawanService.java  (Logika input/pecat karyawan)
-            └── KeuanganService.java  (Logika hitung laba/rugi)
+│   └── com/tokoroti/
+│       ├── Main.java             (Inisialisasi & GUI Launcher)
+│       ├── data/
+│       │   ├── DataStorage.java  (Wrapper Class & List Management)
+│       │   └── FileHandler.java  (Logika File Handling/I/O)
+│       ├── model/                
+│       │   ├── Item.java         (Abstract Class)
+│       │   ├── BahanBaku.java    (Inheritance dari Item)
+│       │   ├── Produk.java       (Inheritance dari Item)
+│       │   ├── Transaksi.java    (Model data transaksi)
+│       │   └── KategoriRoti.java (Enum: MANIS, ASIN, TAWAR)
+│       ├── service/              
+│       │   ├── IOperasiData.java (Interface: minimal 2 method)
+│       │   ├── ProduksiService.java (Polymorphism)
+│       │   └── TransaksiService.java (Logika Penjualan)
+│       └── view/
+│           ├── RoleSelect.java
+│           ├── ProduksiPanel.java
+│           └── TransaksiPanel.java
 ```
