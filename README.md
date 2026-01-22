@@ -36,13 +36,6 @@ TokoRotiApp/
 ```
 # App-TokoRoti - Tugas UAS smt 3 PBO
 
-## kelompok 9
-```
-- Dwi
-- Aldi
-- Iqbal
-- Raihan
-```
 # 📋 DOKUMENTASI METHOD SERVICE
 
 ---
